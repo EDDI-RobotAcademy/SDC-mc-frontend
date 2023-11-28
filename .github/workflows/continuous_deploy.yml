@@ -62,7 +62,7 @@ jobs:
         host: ${{ secrets.AWS_INSTANCE_IP }}
         username: ec2-user
         key: ${{ secrets.PRIVATE_KEY }}
-        source: "./out/*"
+        source: "./dist/*"
         target: "/home/ec2-user/tmp-deploy/sfats-vue-frontend"
         
     - name: Remove Github Actions IP From Security Group
